@@ -1,0 +1,20 @@
+{
+  "rds_cpu": {
+    "file": "rds_cpu_utilization_cc0c53.csv",
+    "md5": "e1498abcc54c6564e81d26c47c837365",
+    "ingested_at": "2026-03-26T09:45:19.550629+00:00",
+    "rows": 4033
+  },
+  "ec2_disk": {
+    "file": "ec2_disk_write_bytes_1ef3de.csv",
+    "md5": "be2a8194a63fee9db0a0fff5a13595ae",
+    "ingested_at": "2026-03-26T09:45:19.580313+00:00",
+    "rows": 4730
+  },
+  "elb_requests": {
+    "file": "elb_request_count_8c0756.csv",
+    "md5": "f8cadcb1b5622b7087b86a6f299b5b7c",
+    "ingested_at": "2026-03-26T09:45:19.610661+00:00",
+    "rows": 4040
+  }
+}

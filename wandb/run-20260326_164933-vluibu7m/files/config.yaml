@@ -1,0 +1,178 @@
+_wandb:
+    value:
+        cli_version: 0.25.1
+        e:
+            d8vrhmssubhreu05nvwhlcivqgc1xfk1:
+                args:
+                    - --config
+                    - config/pipeline_config.json
+                cpu_count: 10
+                cpu_count_logical: 12
+                disk:
+                    /:
+                        total: "511115784192"
+                        used: "232744357888"
+                email: rayyanakbar0208@gmail.com
+                executable: C:\Users\APPSQUADZ\Documents\rayyan\Rayyan_projects\predictive_ssl_anamoly_detector\venv\Scripts\python.exe
+                git:
+                    commit: cffee64f05e07634cea8f603bd798dd6f657d9d6
+                    remote: https://github.com/rayyan666/Predictive-Self-Supervised-Learning-for-Early-Anomaly-Detection-in-Data-Center-Telemetry.git
+                host: APP-LAP-RAYYAN
+                memory:
+                    total: "34025402368"
+                os: Windows-11-10.0.26200-SP0
+                program: -m src.pipeline.model
+                python: CPython 3.14.3
+                root: C:\Users\APPSQUADZ\Documents\rayyan\Rayyan_projects\predictive_ssl_anamoly_detector
+                startedAt: "2026-03-26T11:19:33.678819Z"
+                writerId: d8vrhmssubhreu05nvwhlcivqgc1xfk1
+        m: []
+        python_version: 3.14.3
+        t:
+            "1":
+                - 1
+            "2":
+                - 1
+            "3":
+                - 2
+                - 13
+                - 15
+                - 16
+                - 61
+                - 62
+            "4": 3.14.3
+            "5": 0.25.1
+            "8":
+                - 3
+            "10":
+                - 20
+            "12": 0.25.1
+            "13": windows-amd64
+artifacts/checkpoint_dir:
+    value: C:\Users\APPSQUADZ\Documents\rayyan\Rayyan_projects\predictive_ssl_anamoly_detector\artifacts\checkpoints
+artifacts/output_dir:
+    value: C:\Users\APPSQUADZ\Documents\rayyan\Rayyan_projects\predictive_ssl_anamoly_detector\data\processed
+artifacts/reports_dir:
+    value: C:\Users\APPSQUADZ\Documents\rayyan\Rayyan_projects\predictive_ssl_anamoly_detector\data\reports
+artifacts/save_checksums:
+    value: true
+artifacts/save_plots:
+    value: true
+artifacts/save_quality_report:
+    value: true
+artifacts/scaler_dir:
+    value: C:\Users\APPSQUADZ\Documents\rayyan\Rayyan_projects\predictive_ssl_anamoly_detector\artifacts
+ingestion/max_gap_fill_steps:
+    value: 6
+ingestion/metrics/ec2_disk/description:
+    value: EC2 disk write bytes
+ingestion/metrics/ec2_disk/expected_max:
+    value: 1e+10
+ingestion/metrics/ec2_disk/expected_min:
+    value: 0
+ingestion/metrics/ec2_disk/filename:
+    value: ec2_disk_write_bytes_1ef3de.csv
+ingestion/metrics/ec2_disk/unit:
+    value: bytes
+ingestion/metrics/elb_requests/description:
+    value: ELB request count
+ingestion/metrics/elb_requests/expected_max:
+    value: 1e+06
+ingestion/metrics/elb_requests/expected_min:
+    value: 0
+ingestion/metrics/elb_requests/filename:
+    value: elb_request_count_8c0756.csv
+ingestion/metrics/elb_requests/unit:
+    value: count
+ingestion/metrics/rds_cpu/description:
+    value: RDS CPU utilization (%)
+ingestion/metrics/rds_cpu/expected_max:
+    value: 100
+ingestion/metrics/rds_cpu/expected_min:
+    value: 0
+ingestion/metrics/rds_cpu/filename:
+    value: rds_cpu_utilization_cc0c53.csv
+ingestion/metrics/rds_cpu/unit:
+    value: percent
+ingestion/resample_freq:
+    value: 5min
+ingestion/schema_version:
+    value: "1.0"
+ingestion/source_dir:
+    value: C:\Users\APPSQUADZ\Documents\rayyan\Rayyan_projects\predictive_ssl_anamoly_detector\data\raw
+ingestion/source_type:
+    value: csv
+ingestion/timestamp_col:
+    value: timestamp
+ingestion/value_col:
+    value: value
+logging/log_dir:
+    value: C:\Users\APPSQUADZ\Documents\rayyan\Rayyan_projects\predictive_ssl_anamoly_detector\logs
+logging/log_level:
+    value: INFO
+logging/log_to_console:
+    value: true
+logging/log_to_file:
+    value: true
+model/batch_size:
+    value: 64
+model/dropout:
+    value: 0.2
+model/early_stop_patience:
+    value: 10
+model/epochs:
+    value: 100
+model/hidden_size:
+    value: 64
+model/learning_rate:
+    value: 0.001
+model/num_layers:
+    value: 2
+model/seed:
+    value: 42
+model/weight_decay:
+    value: 1e-05
+preprocessing/future_window:
+    value: 6
+preprocessing/normalization:
+    value: minmax
+preprocessing/past_window:
+    value: 24
+preprocessing/test_ratio:
+    value: 0.15
+preprocessing/train_ratio:
+    value: 0.7
+preprocessing/val_ratio:
+    value: 0.15
+quality/max_duplicate_pct:
+    value: 2
+quality/max_gap_minutes:
+    value: 60
+quality/max_null_pct:
+    value: 5
+quality/min_rows_required:
+    value: 500
+quality/outlier_lower_pct:
+    value: 1
+quality/outlier_upper_pct:
+    value: 99
+wandb/enabled:
+    value: true
+wandb/entity:
+    value: null
+wandb/log_gradients:
+    value: false
+wandb/log_model_artifact:
+    value: true
+wandb/notes:
+    value: Predictive SSL anomaly detection on AWS CloudWatch telemetry
+wandb/project:
+    value: ssl-anomaly-detector
+wandb/run_name:
+    value: null
+wandb/tags:
+    value:
+        - ssl
+        - lstm
+        - aws
+        - anomaly-detection

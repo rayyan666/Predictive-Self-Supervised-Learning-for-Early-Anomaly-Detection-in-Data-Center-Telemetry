@@ -1,0 +1,46 @@
+{
+  "metric_name": "rds_cpu",
+  "processed_at": "2026-03-26T09:45:20.681145+00:00",
+  "normalization": "minmax",
+  "scaler_min": 5.604,
+  "scaler_max": 7.916,
+  "past_window": 24,
+  "future_window": 6,
+  "total_timesteps": 4033,
+  "total_windows": 4004,
+  "train": {
+    "windows": 2802,
+    "X_shape": [
+      2802,
+      24
+    ]
+  },
+  "val": {
+    "windows": 601,
+    "X_shape": [
+      601,
+      24
+    ]
+  },
+  "test": {
+    "windows": 601,
+    "X_shape": [
+      601,
+      24
+    ]
+  },
+  "output_files": [
+    "C:\\Users\\APPSQUADZ\\Documents\\rayyan\\Rayyan_projects\\predictive_ssl_anamoly_detector\\data\\processed\\rds_cpu_train_X.npy",
+    "C:\\Users\\APPSQUADZ\\Documents\\rayyan\\Rayyan_projects\\predictive_ssl_anamoly_detector\\data\\processed\\rds_cpu_train_y.npy",
+    "C:\\Users\\APPSQUADZ\\Documents\\rayyan\\Rayyan_projects\\predictive_ssl_anamoly_detector\\data\\processed\\rds_cpu_val_X.npy",
+    "C:\\Users\\APPSQUADZ\\Documents\\rayyan\\Rayyan_projects\\predictive_ssl_anamoly_detector\\data\\processed\\rds_cpu_val_y.npy",
+    "C:\\Users\\APPSQUADZ\\Documents\\rayyan\\Rayyan_projects\\predictive_ssl_anamoly_detector\\data\\processed\\rds_cpu_test_X.npy",
+    "C:\\Users\\APPSQUADZ\\Documents\\rayyan\\Rayyan_projects\\predictive_ssl_anamoly_detector\\data\\processed\\rds_cpu_test_y.npy",
+    "C:\\Users\\APPSQUADZ\\Documents\\rayyan\\Rayyan_projects\\predictive_ssl_anamoly_detector\\data\\processed\\rds_cpu_scaled_full.npy",
+    "C:\\Users\\APPSQUADZ\\Documents\\rayyan\\Rayyan_projects\\predictive_ssl_anamoly_detector\\data\\processed\\rds_cpu_timestamps.npy"
+  ],
+  "plot_files": [
+    "C:\\Users\\APPSQUADZ\\Documents\\rayyan\\Rayyan_projects\\predictive_ssl_anamoly_detector\\data\\reports\\plots\\rds_cpu_qa.png",
+    "C:\\Users\\APPSQUADZ\\Documents\\rayyan\\Rayyan_projects\\predictive_ssl_anamoly_detector\\data\\reports\\plots\\rds_cpu_windows.png"
+  ]
+}

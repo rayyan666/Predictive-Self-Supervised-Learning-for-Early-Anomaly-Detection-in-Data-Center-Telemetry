@@ -1,0 +1,101 @@
+{
+  "_comment": "AWS Telemetry SSL Anomaly Detection \u2014 Pipeline Config v1.0",
+  "ingestion": {
+    "source_type": "csv",
+    "source_dir": "data/raw",
+    "metrics": {
+      "rds_cpu": {
+        "filename": "rds_cpu_utilization_cc0c53.csv",
+        "unit": "percent",
+        "expected_min": 0.0,
+        "expected_max": 100.0,
+        "description": "RDS CPU utilization (%)"
+      },
+      "ec2_disk": {
+        "filename": "ec2_disk_write_bytes_1ef3de.csv",
+        "unit": "bytes",
+        "expected_min": 0.0,
+        "expected_max": 10000000000.0,
+        "description": "EC2 disk write bytes"
+      },
+      "elb_requests": {
+        "filename": "elb_request_count_8c0756.csv",
+        "unit": "count",
+        "expected_min": 0.0,
+        "expected_max": 1000000.0,
+        "description": "ELB request count"
+      }
+    },
+    "timestamp_col": "timestamp",
+    "value_col": "value",
+    "resample_freq": "5min",
+    "max_gap_fill_steps": 6,
+    "schema_version": "1.0"
+  },
+  "quality": {
+    "max_null_pct": 5.0,
+    "max_duplicate_pct": 2.0,
+    "max_gap_minutes": 60,
+    "outlier_lower_pct": 1.0,
+    "outlier_upper_pct": 99.0,
+    "min_rows_required": 500
+  },
+  "preprocessing": {
+    "normalization": "minmax",
+    "past_window": 24,
+    "future_window": 6,
+    "train_ratio": 0.7,
+    "val_ratio": 0.15,
+    "test_ratio": 0.15
+  },
+  "artifacts": {
+    "output_dir": "data/processed",
+    "reports_dir": "data/reports",
+    "scaler_dir": "artifacts",
+    "save_plots": true,
+    "save_quality_report": true,
+    "save_checksums": true,
+    "checkpoint_dir": "artifacts/checkpoints"
+  },
+  "logging": {
+    "log_dir": "logs",
+    "log_level": "INFO",
+    "log_to_file": true,
+    "log_to_console": true
+  },
+  "model": {
+    "_comment": "LSTM hyperparameters \u2014 tune these to experiment",
+    "hidden_size": 64,
+    "num_layers": 2,
+    "dropout": 0.2,
+    "epochs": 100,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "weight_decay": 1e-05,
+    "early_stop_patience": 10,
+    "seed": 42
+  },
+  "wandb": {
+    "_comment": "Weights & Biases experiment tracking config",
+    "enabled": true,
+    "project": "ssl-anomaly-detector",
+    "entity": null,
+    "run_name": null,
+    "tags": [
+      "ssl",
+      "lstm",
+      "aws",
+      "anomaly-detection"
+    ],
+    "notes": "Predictive SSL anomaly detection on AWS CloudWatch telemetry",
+    "log_gradients": false,
+    "log_model_artifact": true
+  },
+  "anomaly": {
+    "_comment": "Anomaly detection thresholding config",
+    "threshold_k": 3.0,
+    "min_gap_steps": 3,
+    "score_batch_size": 512,
+    "anomaly_output_dir": "data/anomalies"
+  }
+}

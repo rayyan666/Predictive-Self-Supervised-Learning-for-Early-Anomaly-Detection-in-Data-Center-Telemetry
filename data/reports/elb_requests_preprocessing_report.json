@@ -1,0 +1,46 @@
+{
+  "metric_name": "elb_requests",
+  "processed_at": "2026-03-26T09:45:22.725994+00:00",
+  "normalization": "minmax",
+  "scaler_min": 2.0,
+  "scaler_max": 251.22000000000025,
+  "past_window": 24,
+  "future_window": 6,
+  "total_timesteps": 4040,
+  "total_windows": 4011,
+  "train": {
+    "windows": 2807,
+    "X_shape": [
+      2807,
+      24
+    ]
+  },
+  "val": {
+    "windows": 602,
+    "X_shape": [
+      602,
+      24
+    ]
+  },
+  "test": {
+    "windows": 602,
+    "X_shape": [
+      602,
+      24
+    ]
+  },
+  "output_files": [
+    "C:\\Users\\APPSQUADZ\\Documents\\rayyan\\Rayyan_projects\\predictive_ssl_anamoly_detector\\data\\processed\\elb_requests_train_X.npy",
+    "C:\\Users\\APPSQUADZ\\Documents\\rayyan\\Rayyan_projects\\predictive_ssl_anamoly_detector\\data\\processed\\elb_requests_train_y.npy",
+    "C:\\Users\\APPSQUADZ\\Documents\\rayyan\\Rayyan_projects\\predictive_ssl_anamoly_detector\\data\\processed\\elb_requests_val_X.npy",
+    "C:\\Users\\APPSQUADZ\\Documents\\rayyan\\Rayyan_projects\\predictive_ssl_anamoly_detector\\data\\processed\\elb_requests_val_y.npy",
+    "C:\\Users\\APPSQUADZ\\Documents\\rayyan\\Rayyan_projects\\predictive_ssl_anamoly_detector\\data\\processed\\elb_requests_test_X.npy",
+    "C:\\Users\\APPSQUADZ\\Documents\\rayyan\\Rayyan_projects\\predictive_ssl_anamoly_detector\\data\\processed\\elb_requests_test_y.npy",
+    "C:\\Users\\APPSQUADZ\\Documents\\rayyan\\Rayyan_projects\\predictive_ssl_anamoly_detector\\data\\processed\\elb_requests_scaled_full.npy",
+    "C:\\Users\\APPSQUADZ\\Documents\\rayyan\\Rayyan_projects\\predictive_ssl_anamoly_detector\\data\\processed\\elb_requests_timestamps.npy"
+  ],
+  "plot_files": [
+    "C:\\Users\\APPSQUADZ\\Documents\\rayyan\\Rayyan_projects\\predictive_ssl_anamoly_detector\\data\\reports\\plots\\elb_requests_qa.png",
+    "C:\\Users\\APPSQUADZ\\Documents\\rayyan\\Rayyan_projects\\predictive_ssl_anamoly_detector\\data\\reports\\plots\\elb_requests_windows.png"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "metric_name": "ec2_disk",
+  "processed_at": "2026-03-26T09:45:21.641866+00:00",
+  "normalization": "minmax",
+  "scaler_min": 0.0,
+  "scaler_max": 177223620.0,
+  "past_window": 24,
+  "future_window": 6,
+  "total_timesteps": 4730,
+  "total_windows": 4701,
+  "train": {
+    "windows": 3290,
+    "X_shape": [
+      3290,
+      24
+    ]
+  },
+  "val": {
+    "windows": 705,
+    "X_shape": [
+      705,
+      24
+    ]
+  },
+  "test": {
+    "windows": 706,
+    "X_shape": [
+      706,
+      24
+    ]
+  },
+  "output_files": [
+    "C:\\Users\\APPSQUADZ\\Documents\\rayyan\\Rayyan_projects\\predictive_ssl_anamoly_detector\\data\\processed\\ec2_disk_train_X.npy",
+    "C:\\Users\\APPSQUADZ\\Documents\\rayyan\\Rayyan_projects\\predictive_ssl_anamoly_detector\\data\\processed\\ec2_disk_train_y.npy",
+    "C:\\Users\\APPSQUADZ\\Documents\\rayyan\\Rayyan_projects\\predictive_ssl_anamoly_detector\\data\\processed\\ec2_disk_val_X.npy",
+    "C:\\Users\\APPSQUADZ\\Documents\\rayyan\\Rayyan_projects\\predictive_ssl_anamoly_detector\\data\\processed\\ec2_disk_val_y.npy",
+    "C:\\Users\\APPSQUADZ\\Documents\\rayyan\\Rayyan_projects\\predictive_ssl_anamoly_detector\\data\\processed\\ec2_disk_test_X.npy",
+    "C:\\Users\\APPSQUADZ\\Documents\\rayyan\\Rayyan_projects\\predictive_ssl_anamoly_detector\\data\\processed\\ec2_disk_test_y.npy",
+    "C:\\Users\\APPSQUADZ\\Documents\\rayyan\\Rayyan_projects\\predictive_ssl_anamoly_detector\\data\\processed\\ec2_disk_scaled_full.npy",
+    "C:\\Users\\APPSQUADZ\\Documents\\rayyan\\Rayyan_projects\\predictive_ssl_anamoly_detector\\data\\processed\\ec2_disk_timestamps.npy"
+  ],
+  "plot_files": [
+    "C:\\Users\\APPSQUADZ\\Documents\\rayyan\\Rayyan_projects\\predictive_ssl_anamoly_detector\\data\\reports\\plots\\ec2_disk_qa.png",
+    "C:\\Users\\APPSQUADZ\\Documents\\rayyan\\Rayyan_projects\\predictive_ssl_anamoly_detector\\data\\reports\\plots\\ec2_disk_windows.png"
+  ]
+}
