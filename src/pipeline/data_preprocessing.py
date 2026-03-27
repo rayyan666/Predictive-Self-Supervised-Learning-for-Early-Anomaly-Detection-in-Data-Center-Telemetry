@@ -23,7 +23,7 @@ from sklearn.preprocessing import MinMaxScaler
 
 # ── Import from sibling module ────────────────────────────────────────
 # We import only the dataclass — no circular dependency
-from data_ingestion import IngestionResult, setup_logger
+from src.pipeline.data_ingestion import IngestionResult, setup_logger
 
 # W&B tracking
 try:

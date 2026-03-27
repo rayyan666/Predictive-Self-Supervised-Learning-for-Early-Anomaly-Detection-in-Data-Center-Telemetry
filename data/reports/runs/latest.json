@@ -1,0 +1,50 @@
+{
+  "run_id": "20260327_084055",
+  "started_at": "2026-03-27T08:40:55.413513+00:00",
+  "finished_at": "2026-03-27T08:41:03.804240+00:00",
+  "duration_s": 8.39,
+  "mode": "full",
+  "metrics": [
+    "rds_cpu",
+    "ec2_disk",
+    "elb_requests"
+  ],
+  "force": false,
+  "stages_requested": [],
+  "stages": [
+    {
+      "stage": "ingest",
+      "status": "SKIPPED",
+      "skip_reason": "quality reports fresh + data unchanged",
+      "error": "",
+      "duration_s": 0.0,
+      "artifacts": []
+    },
+    {
+      "stage": "preprocess",
+      "status": "SKIPPED",
+      "skip_reason": "preprocessed artifacts fresh",
+      "error": "",
+      "duration_s": 0.0,
+      "artifacts": []
+    },
+    {
+      "stage": "train",
+      "status": "SKIPPED",
+      "skip_reason": "all checkpoints exist + data unchanged",
+      "error": "",
+      "duration_s": 0.0,
+      "artifacts": []
+    },
+    {
+      "stage": "score",
+      "status": "SKIPPED",
+      "skip_reason": "anomaly results fresh",
+      "error": "",
+      "duration_s": 0.0,
+      "artifacts": []
+    }
+  ],
+  "overall": "ALL_SKIPPED",
+  "config_path": "config\\pipeline_config.json"
+}
